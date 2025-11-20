@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
-import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 import { VOXEL_CONTENT } from '../constants';
 
 const VoxelScene: React.FC = () => {
@@ -39,6 +39,7 @@ const VoxelScene: React.FC = () => {
     const height = container.clientHeight;
 
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+    // Initial camera position (Desktop default)
     camera.position.set(0, 16, 64);
 
     const renderer = new THREE.WebGLRenderer({ 
@@ -276,16 +277,31 @@ const VoxelScene: React.FC = () => {
 
     animate();
 
+    // --- RESPONSIVE LAYOUT LOGIC ---
     const handleResize = () => {
         if (!container) return;
         const newWidth = container.clientWidth;
         const newHeight = container.clientHeight;
         
-        camera.aspect = newWidth / newHeight;
+        // Adjust camera based on aspect ratio to prevent cramping on mobile
+        const aspect = newWidth / newHeight;
+        
+        // If portrait (mobile), move camera back/up slightly
+        if (aspect < 1) {
+            camera.position.set(0, 25, 90);
+        } else {
+            camera.position.set(0, 16, 64);
+        }
+
+        camera.aspect = aspect;
         camera.updateProjectionMatrix();
         renderer.setSize(newWidth, newHeight);
         composer.setSize(newWidth, newHeight);
     };
+    
+    // Call once on init to set correct initial position
+    handleResize();
+    
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -322,7 +338,7 @@ const VoxelScene: React.FC = () => {
             viewport={{ once: true }}
             className="text-center px-4"
           >
-             <h2 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">
+             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">
                 {VOXEL_CONTENT.title}
              </h2>
              <p className="text-blue-200 text-lg md:text-xl max-w-xl mx-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
