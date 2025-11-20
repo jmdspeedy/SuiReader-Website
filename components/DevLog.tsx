@@ -179,7 +179,7 @@ const DevLog: React.FC = () => {
     }
   }, [activeIndex, paginationX]);
 
-  const handleDragEnd = (e: MouseEvent | TouchEvent | PointerEvent, { velocity, offset }: PanInfo) => {
+  const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, { velocity }: PanInfo) => {
     const currentX = x.get();
     const centerOffset = containerWidth / 2;
     const projectedX = currentX + velocity.x * 0.2;
