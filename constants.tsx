@@ -148,26 +148,11 @@ export const DEV_LOG_CONTENT = {
 };
 
 export const DEV_LOGS = [
-  { number: "025", date: "Apr 20, 2025", title: "Test Entry - Localization", content: "Stress testing the carousel component with additional card entries. Implemented Japanese and English toggle." },
-  { number: "024", date: "Apr 18, 2025", title: "Test Entry - Haptic Feedback", content: "Added subtle vibration patterns when scanning cards successfully to improve accessibility." },
-  { number: "023", date: "Apr 16, 2025", title: "Test Entry - Cloud Sync", content: "Prototyping optional cloud backup for transaction history so users don't lose data on uninstall." },
-  { number: "022", date: "Apr 14, 2025", title: "Test Entry - Battery Opt", content: "Reduced background polling frequency to save battery life on older Android devices." },
-  { number: "021", date: "Apr 12, 2025", title: "Test Entry - Widgets", content: "Created a home screen widget that shows the last scanned balance without opening the app." },
-  { number: "020", date: "Apr 10, 2025", title: "Test Entry - Wear OS", content: "Investigation into a companion app for Galaxy Watch and Pixel Watch. Early stages." },
-  { number: "019", date: "Apr 08, 2025", title: "Test Entry - Tablet Layout", content: "Optimized the history view for large screens using a master-detail flow." },
-  { number: "018", date: "Apr 06, 2025", title: "Test Entry - Animations", content: "Refined the transition between the card scanner and the history detail view." },
-  { number: "017", date: "Apr 04, 2025", title: "Test Entry - Networking", content: "Refactored the network layer to handle poor connectivity better when fetching station names." },
-  { number: "016", date: "Apr 02, 2025", title: "Test Entry - Security", content: "Conducted an internal security audit to ensure no personal data is logged unnecessarily." },
-  { number: "015", date: "Mar 30, 2025", title: "Test Entry - Dependencies", content: "Updated all Gradle dependencies to their latest stable versions. Fixed build warnings." },
-  { number: "014", date: "Mar 28, 2025", title: "Test Entry - CI/CD", content: "Set up GitHub Actions to automatically build and sign the APK for beta testers." },
-  { number: "013", date: "Mar 26, 2025", title: "Test Entry - Splitting", content: "Implemented code splitting to reduce the initial download size of the application." },
-  { number: "012", date: "Mar 24, 2025", title: "Test Entry - Image Opt", content: "Compressed static assets and converted card backgrounds to WebP format." },
-  { number: "011", date: "Mar 22, 2025", title: "Test Entry - Analytics", content: "Integrated anonymous usage statistics to track which card types are most popular." },
-  { number: "010", date: "Mar 20, 2025", title: "Test Entry - Crash Reports", content: "Added Firebase Crashlytics to monitor stability in the wild." },
-  { number: "009", date: "Mar 18, 2025", title: "Test Entry - Deep Links", content: "Supported deep linking to open specific wallet cards directly from notifications." },
-  { number: "008", date: "Mar 16, 2025", title: "Test Entry - Notifications", content: "Configured local push notifications for daily balance reminders." },
-  { number: "007", date: "Mar 14, 2025", title: "Test Entry - Onboarding", content: "Polished the onboarding slider with new Lottie animations explaining NFC usage." },
-  { number: "006", date: "Mar 12, 2025", title: "Test Entry - Icons", content: "Redesigned the application icon to match the new Android 14 adaptive icon standards." },
+  { number: "005", date: "Mar 12, 2025", title: "Official Launch", content: "SuiReader is now live on the Google Play Store! Thank you to all beta testers for your feedback." },
+  { number: "004", date: "Mar 01, 2025", title: "Premium Features", content: "Launched optional premium tier including data export and custom wallet themes." },
+  { number: "003", date: "Feb 15, 2025", title: "Material 3 Migration", content: "Full UI overhaul to align with the latest Android Material You design guidelines." },
+  { number: "002", date: "Jan 28, 2025", title: "Beta Release", content: "Released the first public beta to a small group of users for stability testing." },
+  { number: "001", date: "Jan 10, 2025", title: "Initial Commit", content: "Started the project. Set up the Android Studio environment and NFC reader logic." },
 ];
 
 // --- Download CTA Section ---
