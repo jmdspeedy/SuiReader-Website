@@ -63,7 +63,7 @@ const HowItWorks: React.FC = () => {
               <div className="p-6 font-mono text-sm">
                 {/* Changed from table to flex-col for better responsiveness on mobile */}
                 <div className="flex flex-col gap-4">
-                  {TECH_SPECS.map((spec) => (
+                  {TECH_SPECS.map((spec, i) => (
                     <div key={spec.label} className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-b border-gray-100 dark:border-gray-800 pb-3 last:border-0 last:pb-0">
                       <span className="text-gray-500 dark:text-gray-500 text-xs sm:text-sm mb-1 sm:mb-0 font-semibold sm:font-normal shrink-0">{spec.label}</span>
                       <span className="text-gray-900 dark:text-gray-200 font-medium text-sm sm:text-right break-all sm:break-normal">{spec.value}</span>

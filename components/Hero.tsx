@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Download, Wallet } from 'lucide-react';
+import { Download, Wifi, Wallet } from 'lucide-react';
 import { HERO_CONTENT } from '../constants';
 
 const Hero: React.FC = () => {
