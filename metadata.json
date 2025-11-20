@@ -1,0 +1,5 @@
+{
+  "name": "SuiReader - NFC Card Reader",
+  "description": "Official landing page for SuiReader, an Android application for reading Suica, Pasmo, and Icoca transit cards.",
+  "requestFramePermissions": []
+}
