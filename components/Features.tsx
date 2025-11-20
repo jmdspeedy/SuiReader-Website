@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FEATURES, FEATURES_CONTENT } from '../constants';
-import { Sparkles } from 'lucide-react';
+import { Sparkles } from './Icons';
 
 const Features: React.FC = () => {
   return (

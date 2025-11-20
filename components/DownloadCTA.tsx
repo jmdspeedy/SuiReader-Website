@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import { Heart } from './Icons';
 import { CTA_CONTENT } from '../constants';
 
 const DownloadCTA: React.FC = () => {

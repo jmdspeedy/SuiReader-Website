@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, PanInfo, useMotionValue, animate, useTransform, MotionValue } from 'framer-motion';
 import { DEV_LOGS, DEV_LOG_CONTENT } from '../constants';
-import { Calendar, Hash, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Calendar, Hash, ChevronLeft, ChevronRight } from './Icons';
 
 const GAP = 24;
 

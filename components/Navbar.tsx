@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X } from './Icons';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, APP_NAME, LOGO_URL, LOGO_ALT, NAV_CONTENT } from '../constants';
 

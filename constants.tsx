@@ -1,5 +1,5 @@
 
-import { Scan, History, Wallet, FileText, Smartphone, Moon, Bell, PieChart, ShieldCheck, Wifi, Database } from 'lucide-react';
+import { Scan, History, Wallet, FileText, Smartphone, Moon, Bell, PieChart, ShieldCheck, Wifi, Database } from './components/Icons';
 
 // --- Global Settings ---
 export const APP_NAME = "SuiReader";
