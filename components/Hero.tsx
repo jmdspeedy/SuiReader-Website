@@ -41,10 +41,30 @@ const Hero: React.FC = () => {
               <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center justify-center gap-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-all"
+                animate={{ 
+                  boxShadow: ["0 0 0 0 rgba(0, 194, 101, 0)", "0 0 0 10px rgba(0, 194, 101, 0)"] 
+                }}
+                transition={{ 
+                  boxShadow: { duration: 2, repeat: Infinity }
+                }}
+                className="relative flex items-center justify-center gap-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:shadow-2xl transition-transform overflow-hidden group"
               >
-                <Download className="w-5 h-5" />
-                {HERO_CONTENT.googlePlayBtn}
+                 {/* Shine Effect */}
+                 <motion.div
+                  className="absolute top-0 left-0 w-12 h-full bg-white/30 -skew-x-12 z-0"
+                  initial={{ x: -150 }}
+                  animate={{ x: 400 }}
+                  transition={{
+                    repeat: Infinity,
+                    repeatDelay: 3,
+                    duration: 1.5,
+                    ease: "easeInOut"
+                  }}
+                />
+                <div className="relative z-10 flex items-center gap-3">
+                    <Download className="w-5 h-5" />
+                    {HERO_CONTENT.googlePlayBtn}
+                </div>
               </motion.button>
             </div>
 
@@ -119,7 +139,7 @@ const Hero: React.FC = () => {
                                           </div>
                                           <div>
                                               <div className="text-[10px] text-gray-400 mb-0.5">{item.date}</div>
-                                              <div className="text-xs font-bold text-white tracking-wide">{item.from} → {item.to}</div>
+                                              <div className="text-[10px] sm:text-xs font-bold text-white tracking-wide">{item.from} → {item.to}</div>
                                           </div>
                                       </div>
                                       <div className="text-right">

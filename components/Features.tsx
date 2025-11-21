@@ -7,7 +7,12 @@ import { Sparkles } from './Icons';
 const Features: React.FC = () => {
   return (
     <section id="features" className="py-24 bg-white dark:bg-dark-bg relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background Dot Matrix Pattern */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
+         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center mb-20">
           <motion.h2 

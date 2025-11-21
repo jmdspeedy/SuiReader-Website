@@ -206,8 +206,13 @@ const DevLog: React.FC = () => {
   const needsScroll = totalPaginationWidth > PAGINATION_VISIBLE_WIDTH;
 
   return (
-    <section id="dev-log" className="py-24 bg-white dark:bg-[#121212] overflow-hidden border-t border-gray-100 dark:border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <section id="dev-log" className="relative py-24 bg-white dark:bg-[#121212] overflow-hidden border-t border-gray-100 dark:border-gray-800">
+      {/* Background Dot Matrix Pattern */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
+         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div className="flex justify-between items-end">
             <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -240,7 +245,7 @@ const DevLog: React.FC = () => {
       {/* Carousel Container */}
       <div 
         ref={containerRef} 
-        className="relative w-full min-h-[340px] flex items-center"
+        className="relative z-10 w-full min-h-[340px] flex items-center"
         style={{ touchAction: 'pan-y' }}
       >
         <div className="absolute left-0 top-0 bottom-0 w-8 md:w-32 bg-gradient-to-r from-white dark:from-[#121212] to-transparent z-20 pointer-events-none" />
@@ -274,7 +279,7 @@ const DevLog: React.FC = () => {
       </div>
 
       {/* Scrollable Pagination Dots Strip */}
-      <div className="mt-6 flex justify-center w-full">
+      <div className="relative z-10 mt-6 flex justify-center w-full">
           <div 
             className="relative overflow-hidden"
             style={{ 
