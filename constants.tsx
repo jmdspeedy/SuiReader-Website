@@ -40,8 +40,8 @@ export const HERO_CONTENT = {
     balance: "¥ 1,250",
     historyTitle: "History",
     transactions: [
-      { date: '2025-01-25', from: 'Shinjuku', to: 'Shibuya', cost: 300, bal: 1250 },
-      { date: '2025-01-24', from: 'Tokyo', to: 'Shinagawa', cost: 300, bal: 1550 },
+      { date: '2025-01-25', from: 'Narita', to: 'Shibuya', cost: 300, bal: 1250 },
+      { date: '2025-01-24', from: 'Tokyo', to: 'Daiba', cost: 300, bal: 1550 },
       { date: '2025-01-23', from: 'Ikebukuro', to: 'Ueno', cost: 300, bal: 1850 },
       { date: '2025-01-22', from: 'Akihabara', to: 'Tokyo', cost: 300, bal: 2150 },
     ]
