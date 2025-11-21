@@ -99,7 +99,7 @@ const Navbar: React.FC = () => {
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white p-2"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X /> : <Menu />}
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
