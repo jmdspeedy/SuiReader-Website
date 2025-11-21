@@ -1,4 +1,5 @@
 
+
 import { Scan, History, Wallet, FileText, Smartphone, Moon, Bell, PieChart, ShieldCheck, Wifi, Database } from './components/Icons';
 
 // --- Global Settings ---
@@ -148,26 +149,32 @@ export const DEV_LOG_CONTENT = {
 };
 
 export const DEV_LOGS = [
-  { number: "025", date: "Apr 20, 2025", title: "Test Entry - Localization", content: "Stress testing the carousel component with additional card entries. Implemented Japanese and English toggle." },
-  { number: "024", date: "Apr 18, 2025", title: "Test Entry - Haptic Feedback", content: "Added subtle vibration patterns when scanning cards successfully to improve accessibility." },
-  { number: "023", date: "Apr 16, 2025", title: "Test Entry - Cloud Sync", content: "Prototyping optional cloud backup for transaction history so users don't lose data on uninstall." },
-  { number: "022", date: "Apr 14, 2025", title: "Test Entry - Battery Opt", content: "Reduced background polling frequency to save battery life on older Android devices." },
-  { number: "021", date: "Apr 12, 2025", title: "Test Entry - Widgets", content: "Created a home screen widget that shows the last scanned balance without opening the app." },
-  { number: "020", date: "Apr 10, 2025", title: "Test Entry - Wear OS", content: "Investigation into a companion app for Galaxy Watch and Pixel Watch. Early stages." },
-  { number: "019", date: "Apr 08, 2025", title: "Test Entry - Tablet Layout", content: "Optimized the history view for large screens using a master-detail flow." },
-  { number: "018", date: "Apr 06, 2025", title: "Test Entry - Animations", content: "Refined the transition between the card scanner and the history detail view." },
-  { number: "017", date: "Apr 04, 2025", title: "Test Entry - Networking", content: "Refactored the network layer to handle poor connectivity better when fetching station names." },
-  { number: "016", date: "Apr 02, 2025", title: "Test Entry - Security", content: "Conducted an internal security audit to ensure no personal data is logged unnecessarily." },
-  { number: "015", date: "Mar 30, 2025", title: "Test Entry - Dependencies", content: "Updated all Gradle dependencies to their latest stable versions. Fixed build warnings." },
-  { number: "014", date: "Mar 28, 2025", title: "Test Entry - CI/CD", content: "Set up GitHub Actions to automatically build and sign the APK for beta testers." },
-  { number: "013", date: "Mar 26, 2025", title: "Test Entry - Splitting", content: "Implemented code splitting to reduce the initial download size of the application." },
-  { number: "012", date: "Mar 24, 2025", title: "Test Entry - Image Opt", content: "Compressed static assets and converted card backgrounds to WebP format." },
-  { number: "011", date: "Mar 22, 2025", title: "Test Entry - Analytics", content: "Integrated anonymous usage statistics to track which card types are most popular." },
-  { number: "010", date: "Mar 20, 2025", title: "Test Entry - Crash Reports", content: "Added Firebase Crashlytics to monitor stability in the wild." },
-  { number: "009", date: "Mar 18, 2025", title: "Test Entry - Deep Links", content: "Supported deep linking to open specific wallet cards directly from notifications." },
-  { number: "008", date: "Mar 16, 2025", title: "Test Entry - Notifications", content: "Configured local push notifications for daily balance reminders." },
-  { number: "007", date: "Mar 14, 2025", title: "Test Entry - Onboarding", content: "Polished the onboarding slider with new Lottie animations explaining NFC usage." },
-  { number: "006", date: "Mar 12, 2025", title: "Test Entry - Icons", content: "Redesigned the application icon to match the new Android 14 adaptive icon standards." },
+  { number: "026", date: "Nov 28, 2025", title: "Digital Real Estate", content: "The official app website is built and finished. This page you are looking at now serves as the app display hub, showcasing features through 3D visuals and providing access to downloads." },
+  { number: "025", date: "Nov 25, 2025", title: "Web Origins", content: "Decided to build a dedicated website for the app. Started the project using React, Three.js and Tailwind CSS to create a high-quality landing page that matches the app's aesthetic." },
+  { number: "024", date: "Nov 19, 2025", title: "The Final Countdown", content: "Got 12 closed testers on Google Play! Now the app just need 14 days of continuous testing to satisfy Play Store requirements before the official public release." },
+  { number: "023", date: "Nov 18, 2025", title: "Vibes Check: Passed", content: "Navigation bar is now transparent in light mode and dark in night mode. This enhances visual consistency across the OS." },
+  { number: "022", date: "Nov 15, 2025", title: "Using the Whole Screen", content: "Edge-to-edge display enabled; the app looks great behind the status bars. (Did this only because Android API 35 forced me to.)" },
+  { number: "021", date: "Nov 14, 2025", title: "Time Travel Unlocked", content: "Jump straight to specific dates with the new week selector dialog. Quickly navigate past transaction history without endless scrolling, making data retrieval significantly faster." },
+  { number: "020", date: "Nov 14, 2025", title: "Cutting Corners (Literally)", content: "Bar charts now feature rounded corners for a modern aesthetic. Softens the UI visualization, aligning with Material Design 3 principles for a friendlier user experience." },
+  { number: "019", date: "Nov 13, 2025", title: "Swipe Right on Data", content: "Swipe through 52 weeks of history with our new pagination. Implemented a horizontal pager that dynamically loads weekly data, improving performance and navigation speed." },
+  { number: "018", date: "Nov 13, 2025", title: "The Numbers Don't Lie", content: "New cards display usage counts and total top-up amounts clearly. Summarizes weekly activities at a glance, providing immediate financial insights without needing deep analysis." },
+  { number: "017", date: "Nov 13, 2025", title: "Charts, Charts, Charts!", content: "Visual learners rejoice: added bar and pie charts for spending habits. Breaks down transport versus retail spending, helping users better understand their monthly budget allocation." },
+  { number: "016", date: "Nov 12, 2025", title: "Is This Thing On?", content: "Added a clear warning icon for when NFC is disabled. Proactively alerts users to system settings issues, reducing confusion when scans fail to initiate." },
+  { number: "015", date: "Nov 12, 2025", title: "Shameless Self-Promotion", content: "Added Privacy Policy and a hint that the developer is looking for work." },
+  { number: "014", date: "Nov 11, 2025", title: "Playing Nice with Android", content: "Safer, cleaner PDF exports using Android's native MediaStore API. Ensures compatibility with Android 11+ scoped storage rules, preventing file access errors during export." },
+  { number: "013", date: "Nov 09, 2025", title: "Free Stuff for Ads", content: "Unlock Premium features permanently by watching a few rewarded ads. giving more users access to advanced tools." },
+  { number: "012", date: "Nov 07, 2025", title: "Direct Line to Management", content: "Replaced buggy dialogs with a direct email feedback button. Streamlines the support process, allowing users to attach logs and screenshots directly via their email client." },
+  { number: "011", date: "Nov 05, 2025", title: "Squashing Bugs", content: "Report glitches instantly with the new in-app bug reporting form. Captures device info automatically, helping the dev team reproduce and fix crashes much faster." },
+  { number: "010", date: "Nov 05, 2025", title: "Secret Knock", content: "Tap version number 10 times to unlock secret debug settings. Gives advanced users access to raw NFC logs and raw data inspection for troubleshooting." },
+  { number: "009", date: "Nov 05, 2025", title: "Credit Where It's Due", content: "Added a list crediting all open-source libraries used in the app. Acknowledges community contributions and fulfills license requirements for third-party software dependencies." },
+  { number: "008", date: "Nov 05, 2025", title: "Who Made This?", content: "New About screen in Settings displaying credits and app info. Centralizes application metadata and provides easy access to the privacy policy and terms of service." },
+  { number: "007", date: "Nov 05, 2025", title: "Smooth Like Butter", content: "Silky smooth Material Design motion transitions added to all screens. Utilizes shared element transitions to make navigating between list views and details feel organic." },
+  { number: "006", date: "Nov 05, 2025", title: "Smarter Pop-ups", content: "Premium pop-ups are now context-aware for Wallet and Export features. Targets specific user actions with relevant upsells, improving conversion rates while minimizing annoyance." },
+  { number: "005", date: "Oct 30, 2025", title: "Digital Hoarder?", content: "Save multiple Suica cards locally to keep history forever. Allows tracking of separate commuter and personal cards within a single unified interface." },
+  { number: "004", date: "Oct 29, 2025", title: "Don't Forget!", content: "Set daily or weekly reminders to scan your card balance. Helps commuters avoid the embarrassment of insufficient funds at the ticket gate during rush hour." },
+  { number: "003", date: "Oct 26, 2025", title: "Expense Reports Made Easy", content: "Export your full transaction history as a PDF download. Creates documents suitable for company reimbursement claims and personal records." },
+  { number: "002", date: "Oct 25, 2025", title: "Going Global & Going Dark", content: "Added Japanese, Chinese support, and a sleek system-wide Dark Mode. Broadens accessibility for international users and reduces eye strain during night-time usage." },
+  { number: "001", date: "Oct 19, 2025", title: "Hello World", content: "Started and wrote the first line of code for 'SuiReader' project. Initialized the Git repository and set up the basic Android build configuration." },
 ];
 
 // --- Download CTA Section ---
