@@ -53,7 +53,7 @@ export const HERO_CONTENT = {
 export const FEATURES_CONTENT = {
   title: (
     <>
-      Everything you need for <br className="md:hidden" /> seamless travel in Japan.
+      Everything you need for <br className="md:hidden" /> travel in Japan.
     </>
   ),
   description: "SuiReader combines powerful NFC technology with a clean, interruption-free interface.",

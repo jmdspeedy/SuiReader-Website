@@ -144,7 +144,7 @@ const Hero: React.FC = () => {
                                       </div>
                                       <div className="text-right">
                                           <div className="text-[10px] text-gray-400">¥ {item.bal.toLocaleString()}</div>
-                                          <div className="font-bold text-white text-sm">- ¥ {item.cost}</div>
+                                          <div className="font-bold text-white text-[10px] sm:text-xs">- ¥ {item.cost}</div>
                                       </div>
                                   </div>
                               ))}
