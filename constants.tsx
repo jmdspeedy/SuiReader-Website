@@ -182,6 +182,7 @@ export const CTA_CONTENT = {
   title: "Start tracking your travel today.",
   description: "Download SuiReader for Android and take control of your Japanese IC cards. Simple, ad-free, and secure.",
   googlePlayBtn: "Google Play",
+  apkBtn: "Direct Download",
   donateBtn: "Donate"
 };
 

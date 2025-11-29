@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suireader.jameswu.me/sitemap.xml
