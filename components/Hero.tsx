@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Download, Wallet } from './Icons';
@@ -38,7 +39,10 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <motion.button 
+              <motion.a 
+                href={HERO_CONTENT.googlePlayUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 animate={{ 
@@ -65,7 +69,7 @@ const Hero: React.FC = () => {
                     <Download className="w-5 h-5" />
                     {HERO_CONTENT.googlePlayBtn}
                 </div>
-              </motion.button>
+              </motion.a>
             </div>
 
             <div className="mt-10 flex items-center justify-center lg:justify-start gap-6 text-gray-500 dark:text-gray-500 text-sm font-medium">

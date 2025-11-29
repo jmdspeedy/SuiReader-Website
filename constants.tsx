@@ -33,6 +33,7 @@ export const HERO_CONTENT = {
   ),
   description: "Your essential companion for navigating life in Japan. Instantly read Suica, ICOCA, PASMO, and Kitaca cards. Enjoy a completely ad-free core experience designed for efficiency.",
   googlePlayBtn: "Get on Google Play (FREE!)",
+  googlePlayUrl: "#",
   learnMoreBtn: "Learn more",
   features: ["Ad-Free Core", "Works Offline", "Card Management"],
   mockup: {
@@ -182,8 +183,11 @@ export const CTA_CONTENT = {
   title: "Start tracking your travel today.",
   description: "Download SuiReader for Android and take control of your Japanese IC cards. Simple, ad-free, and secure.",
   googlePlayBtn: "Google Play",
+  googlePlayUrl: "#",
   apkBtn: "Direct Download",
-  donateBtn: "Donate"
+  apkUrl: "#",
+  donateBtn: "Donate",
+  donationUrl: "https://buymeacoffee.com/jmdspeedy"
 };
 
 // --- Footer ---
