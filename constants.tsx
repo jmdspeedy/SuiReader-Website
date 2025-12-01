@@ -185,7 +185,7 @@ export const CTA_CONTENT = {
   googlePlayBtn: "Google Play",
   googlePlayUrl: "#",
   apkBtn: "Direct Download",
-  apkUrl: "#",
+  apkUrl: "https://www.mediafire.com/file/9vdioj0xe9wrzs2/suireader-app-release.apk/file",
   donateBtn: "Donate",
   donationUrl: "https://buymeacoffee.com/jmdspeedy"
 };
