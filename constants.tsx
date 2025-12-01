@@ -150,9 +150,9 @@ export const DEV_LOG_CONTENT = {
 };
 
 export const DEV_LOGS = [
-  { number: "026", date: "Nov 28, 2025", title: "Digital Real Estate", content: "The official app website is built and finished. This page you are looking at now serves as the app display hub, showcasing features through 3D visuals and providing access to downloads." },
-  { number: "025", date: "Nov 25, 2025", title: "Web Origins", content: "Decided to build a dedicated website for the app. Started the project using React, Three.js and Tailwind CSS to create a high-quality landing page that matches the app's aesthetic." },
-  { number: "024", date: "Nov 19, 2025", title: "The Final Countdown", content: "Got 12 closed testers on Google Play! Now the app just need 14 days of continuous testing to satisfy Play Store requirements before the official public release." },
+  { number: "026", date: "Dec 01, 2025", title: "Help Wanted: Testers", content: "We are currently looking for 12 testers to join our closed testing track. This is a mandatory requirement by Google Play before we can apply for production access. Help us launch by joining the test group!" },
+  { number: "025", date: "Nov 28, 2025", title: "Digital Real Estate", content: "The official app website is built and finished. This page you are looking at now serves as the app display hub, showcasing features through 3D visuals and providing access to downloads." },
+  { number: "024", date: "Nov 25, 2025", title: "Web Origins", content: "Decided to build a dedicated website for the app. Started the project using React, Three.js and Tailwind CSS to create a high-quality landing page that matches the app's aesthetic." },
   { number: "023", date: "Nov 18, 2025", title: "Vibes Check: Passed", content: "Navigation bar is now transparent in light mode and dark in night mode. This enhances visual consistency across the OS." },
   { number: "022", date: "Nov 15, 2025", title: "Using the Whole Screen", content: "Edge-to-edge display enabled; the app looks great behind the status bars. (Did this only because Android API 35 forced me to.)" },
   { number: "021", date: "Nov 14, 2025", title: "Time Travel Unlocked", content: "Jump straight to specific dates with the new week selector dialog. Quickly navigate past transaction history without endless scrolling, making data retrieval significantly faster." },
