@@ -138,7 +138,7 @@ export const HOW_IT_WORKS_CONTENT = {
 
 export const TECH_SPECS = [
   { label: 'Protocol', value: 'NfcF (JIS 6319-4)' },
-  { label: 'Architecture', value: 'MVVM + Repository' },
+  { label: 'Architecture', value: 'MVC' },
   { label: 'UI Framework', value: 'Jetpack Compose / Material 3' },
   { label: 'Required Permission', value: 'android.permission.NFC' },
 ];
